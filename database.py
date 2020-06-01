@@ -45,6 +45,6 @@ class Database:
 
     def insert_db(self , row ):
         mycursor = self.connection.cursor()
-        mycursor.execute("INSERT INTO newapidb (id,timesstamp,temperature,duration) VALUES(%s,%s,%s,%s)", row)
+        mycursor.execute("INSERT INTO csvdb (id,timesstamp,temperature,duration) VALUES(%s,%s,%s,%s)", row)
         mycursor.close()
         self.connection.commit()
