@@ -1,5 +1,8 @@
 # SmartSteel
 
+***With Docker***
+Switch to repositry "Task_With_Docker" and make sure your docker engine is up and running then run ```docker build -t anmol_image:latest .``` and when it finshes, To run the container ```docker run -t -p 4567:4567 anmol_image```, open browser and go to localhost:4567 and press enter
+
 ***PREREQUISITE: mysql, python3, Linux preffered***
 
 If Python3 is not installed using https://www.python.org/downloads/ as per your distribution
@@ -24,3 +27,4 @@ run ```python3 API.py```
 
 
 **Tested on OSX and Ubuntu with mysql credentials root and empty password**
+Polyglot databases can be used and I have used python cache if the get request is to be fetched again or usr makes a retry
